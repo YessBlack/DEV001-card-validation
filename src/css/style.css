@@ -10,7 +10,7 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-/** ----- Pagina Principal**/
+/** ------------ Pagina Principal -----------**/
 .main {
   background-image: url(../assets/img/banner-index.jpg);
   background-size: cover;
@@ -52,4 +52,43 @@ body {
 input {
   padding: 1rem;
   width: 20px;
+}
+
+/* ----------- Pagina formulario de tarjeta -------------*/
+.main-tarjet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.card {
+  background: #780206;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  width:380px ;
+  height: 240px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+.card img {
+  width: 60px;
+  height: 44px;
+}
+.number {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.number span{
+  margin-right: 1.2rem;
+}
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+}
+.date {
+  text-align: end;
 }
