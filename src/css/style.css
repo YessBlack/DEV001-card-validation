@@ -52,11 +52,22 @@ body {
   text-decoration: none;
 }
 /* ----------- Pagina formulario de tarjeta -------------*/
+.bg-secondary {
+  background-image: url(../assets/img/backgroundSeundario.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(10px);
+  position: fixed;
+  display: block;
+  height: 100vh;
+  z-index: -10;
+  left: 0;
+  right: 0;
+}
 .main-tarjet {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../assets/img/backgroundSeundario.jpg);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,7 +87,7 @@ body {
   border-radius: 20px;
   position: relative;
   z-index: 10;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .card img {
   width: 60px;
@@ -99,11 +110,12 @@ body {
 .section-form {
   width: 550px;
   border-radius: 20px;
-  box-shadow: rgba(221, 12, 92, 0.329) 0px 7px 29px 0px;
+  box-shadow: rgba(247, 0, 123, 0.35) 0px 5px 15px;
   background-color: white;
   padding: 3rem;
   position: absolute;
   margin-top: 10%;
+  z-index: 1;
 }
 .form {
   display: flex;
