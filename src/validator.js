@@ -27,17 +27,24 @@ const validator = {
         nuevoArray.push(arrNumerosReverso[i])
     }
   }
-
   //suma y comprobacion del modulo 10
   let suma = 0
   for ( let i=0; i < nuevoArray.length; i++ ){
     suma += parseInt(nuevoArray[i])
   }
-
-  (suma % 10 === 0) ? true : false
+  return (suma % 10 === 0) ? true : false
   },
-  maskify(){
-
+  maskify(creditCardNumber){
+    //separar numeros
+    creditCardNumber = creditCardNumber.split("")
+    let mascara = ""
+    for (let i=0;i<creditCardNumber.length -4;i++){
+      //agregar # a la mascara
+      mascara += "#"
+    }
+    //concatenar mascara con los ultimos 4 digitos
+    mascara += creditCardNumber.slice(-4).toString().replace(/,/g, "")
+    return mascara
   }
 };
 
