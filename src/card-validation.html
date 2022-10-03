@@ -19,13 +19,17 @@
         <span>####</span>
         <span>####</span>
         <span>####</span>
-        <span>0000</span>
+        <span class="end-number">0000</span>
       </p>
       <div class="footer-card">
-        <p>TU NOMBRE AQUI</p>
+        <p class="name">TU NOMBRE AQUI</p>
         <div class="date">
           <p>VALID THRUS</p>
-          <p>**/****</p>
+          <p>
+            <span class="month">**</span>
+            <span>/</span>
+            <span class="year">****</span>
+          </p>
         </div>
       </div>
     </section>
@@ -43,7 +47,7 @@
         <div class="grid-date">
           <div class="month">
             <label for="">MM</label>
-            <select name="month" id="">
+            <select name="month" id="month">
               <option value="01" name="01">01</option>
               <option value="02" name="02">02</option>
               <option value="03" name="03">03</option>
@@ -60,7 +64,7 @@
           </div>
           <div class="year">
             <label for="">YYYY</label>
-            <select name="year" id="">
+            <select name="year" id="year">
               <option value="2022">2022</option>
               <option value="2023">2023</option>
               <option value="2024">2024</option>
@@ -80,7 +84,9 @@
             <input type="number" id="cvv" name="cvv" required>
           </div>
         </div>
-        <button class="btnValidar">Adquirir</button>
+        <div class="group-buttons">
+          <button class="btnValidar">Adquirir</button>
+        </div>
       </form>
     </section>
   </main>
