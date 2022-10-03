@@ -7,12 +7,28 @@ $('#form').addEventListener('submit', (e) => {
   const data = Object.fromEntries(new FormData(e.target));
 
   (validator.isValid(data.number))
-  ? alert('Tarjeta valida')
-  : alert('Tarjeta invalida')
+  ? alert('Felicitaciones haz adquirido una suscripcion de 1 año')
+  : alert('El pago no se ha podido efectuar, por favor verifica los datos ingresados')
 
   $('#number').value = validator.maskify(data.number)
-
-  alert(validator.maskify(data.number))
+  $('.name').innerHTML = data.name.toUpperCase()
+  $('.month').innerHTML = data.month
+  $('.year').innerHTML = data.year
 
 })
 
+$('#name').addEventListener('keyup', () => {
+  $('.name').innerHTML = $('#name').value.toUpperCase()
+})
+
+$('#number').addEventListener('keyup', () => {
+  $('.end-number').innerHTML = $('#number').value.slice(-4)
+})
+
+$('#month').addEventListener('change', () => {
+  $('.month').innerHTML = $('#month').value
+})
+
+$('#year').addEventListener('change', () => {
+  $('.year').innerHTML = $('#year').value
+})
