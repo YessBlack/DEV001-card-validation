@@ -11,10 +11,6 @@ $('#form').addEventListener('submit', (e) => {
   : alert('El pago no se ha podido efectuar, por favor verifica los datos ingresados')
 
   $('#number').value = validator.maskify(data.number)
-  $('.name').innerHTML = data.name.toUpperCase()
-  $('.month').innerHTML = data.month
-  $('.year').innerHTML = data.year
-
 })
 
 $('#name').addEventListener('keyup', () => {
