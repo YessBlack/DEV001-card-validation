@@ -43,7 +43,6 @@ body {
 .description {
   font-size: 1.2rem;
   text-align: center;
-
 }
 .btn-primary {
   background-color: var(--colorPrimary);
@@ -111,6 +110,9 @@ body {
   padding: 2rem;
   margin-top: 2rem;
 }
+.group-form {
+  border: none;
+}
 .form input {
   padding: .7rem;
   width: 100%;
@@ -148,12 +150,47 @@ body {
   overflow: hidden;
 }
 
+/* ----------- Alertas -------------*/
+.alert-danger {
+  background-color: #f8d7da;
+  padding: 0.5rem;
+  color: #842029;
+  border-radius: 10px;
+  border: 1px solid #f6cfd2;
+  text-align: center;
+  widows: 100%;
+  margin-top: .5rem;
+}
+.hide {
+  display: none;
+}
+.alert {
+  margin-top: -35rem;
+  z-index: 100;
+}
+.alert-success {
+  color: #FF008A;
+  width: 320px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2rem;
+  text-align:center;
+  background-color: white;
+  border-radius: 20px;
+}
+.alert-success p {
+  color:black;
+}
+.alert-success ion-icon {
+  font-size: 3rem;
+}
+.blur {
+  filter: blur(10px);
+}
 @media (min-width: 768px) {
   .main-info {
     max-width: 550px;
   }
 }
-
 @media (min-width:1024px) {
   .card {
     position: relative;
@@ -179,6 +216,9 @@ body {
   .grid-date div select {
     padding: .65rem;
     width: 140px;
+  }
+  .alert {
+    margin-top: -5rem;
   }
 }
 
