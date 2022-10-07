@@ -28,4 +28,6 @@ Muchos usuarios deben pagar altas sumas de dinero por adquirir un solo videojueg
 
 El prototipo inicial solo era una pagina cuya finalidad era comprobar que el número de tarjeta ingresada fuera valido, ante esto, recibí sugerencias de darle una finalidad más completa, así que decidí aplicarlo orientando mi idea hacia una tienda de videojuegos donde para adquirir la suscripción es necesario validar la tarjeta de crédito
 
-## Imagen del prototipo final
+### Imagen del prototipo final
+
+[Ver aqui Figma](https://www.figma.com/file/kUQ1cpx7mqCg1DaXyRxWnz/Card-Validator_Laboratoria?node-id=0%3A1 )
