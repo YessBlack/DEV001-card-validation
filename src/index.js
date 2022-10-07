@@ -22,6 +22,7 @@ const showAlertSuccess = () => {
     $('.alert-success').classList.remove('hide');
   }, 2000);
 }
+
 //Recuperar datos del formulario
 $('#form').addEventListener('submit', (e) => {
   e.preventDefault()
