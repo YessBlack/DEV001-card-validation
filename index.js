@@ -3,8 +3,8 @@ import validator from './validator.js';
 const $ = (selector) => document.querySelector(selector)
 
 //Mostar Alerta de Error
-const showAlertDanger = (text) => {
-  $('.text-danger').textContent = text
+const showAlertDanger = () => {
+  $('.text-danger').textContent = 'Se debe ingresar un número de tarjeta válido'
   setTimeout(() => {
     $('.alert-danger').classList.remove('hide')
   },2000);
@@ -29,11 +29,11 @@ $('#form').addEventListener('submit', (e) => {
   const data = Object.fromEntries(new FormData(e.target));
 
   if(data.number <= 0) {
-    showAlertDanger('Por favor ingrese un número válido');
+    showAlertDanger();
   }else{
     (validator.isValid(data.number))
     ? showAlertSuccess()
-    : showAlertDanger('El pago no se ha podido efectuar, por favor verifica los datos ingresados');
+    : showAlertDanger();
   }
 
   $('#number').value = validator.maskify(data.number)
