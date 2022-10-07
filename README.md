@@ -6,8 +6,14 @@ GameStore es una tienda virtual que ofrece la posibilidad de suscribirte y obten
 
 ## Imagen final del proyecto
 
+### Diseño Desktop
+
 ![Pantalla principal](src/assets/img/readme/PantallaPrincipal_Desktop.png)
 ![Pantalla Pago](src/assets/img/readme/PantallaPago_Desktop.PNG)
+
+### Diseño Mobile
+![Pantalla principal mobile](src/assets/img/readme/PantallaPrincipal_Mobile.png)
+![Pantalla pago mobile](src/assets/img/readme/PantallaPago_Mobile.PNG)
 
 ## Investigación UX
 
@@ -30,4 +36,6 @@ El prototipo inicial solo era una pagina cuya finalidad era comprobar que el nú
 
 ### Imagen del prototipo final
 
-[Ver aqui Figma](https://www.figma.com/file/kUQ1cpx7mqCg1DaXyRxWnz/Card-Validator_Laboratoria?node-id=0%3A1 )
+El prototipo final se encuentra disponible en Figma
+
+[Ver aqui diseño en Figma](https://www.figma.com/file/kUQ1cpx7mqCg1DaXyRxWnz/Card-Validator_Laboratoria?node-id=0%3A1 )
