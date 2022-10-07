@@ -172,8 +172,7 @@ body {
   border-radius: 10px;
   border: 1px solid var(--colorBGDanger);
   text-align: center;
-  widows: 100%;
-  margin-top: .5rem;
+  margin-top: .3rem;
 }
 .hide {
   display: none;
@@ -211,8 +210,9 @@ body {
     z-index: 10;
   }
   .section-form {
-    padding: 3rem;
+    padding: 2.5rem;
     margin-top: 8rem;
+    height: 470px;
   }
   .form {
     display: flex;
