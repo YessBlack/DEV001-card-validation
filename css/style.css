@@ -1,0 +1,236 @@
+*, *::after,*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* Colors */
+  --bgColorPrimary: rgba(31, 2, 14, .49);
+  --colorPrimary: #7D09D9;
+  --colorSecondary: #D9D9D9;
+  --colorTextPrimary: #FF008A;
+  --colorTextWhite:#FFFFFF;
+  --colorTextBlack:#000000;
+  --colorBGDanger: #f8d7da;
+  --colorTextDanger: #842029;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/** ------------ Pagina Principal -----------**/
+.main {
+  background-image: url(../assets/img/backgroundPrincipal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.main-info {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--bgColorPrimary);
+  border-radius: 0 20px 20px 0;
+  color: var(--colorTextWhite);
+  padding: 4rem;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--colorTextPrimary);
+}
+.spacing {
+  line-height: 1.5;
+}
+.description {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.btn-primary {
+  background-color: var(--colorPrimary);
+  padding: 1rem;
+  color: var(--colorTextWhite);
+  text-decoration: none;
+}
+/* ----------- Pagina formulario de tarjeta -------------*/
+.bg-secondary {
+  background-image: url(../assets/img/backgroundSeundario.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(10px);
+  position: fixed;
+  height: 100vh;
+  z-index: -10;
+  left: 0;
+  right: 0;
+}
+.main-tarjet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  margin-top: 1rem;
+  background: #780206;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: var(--colorTextWhite);
+  width:370px ;
+  height: 230px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 10;
+}
+.card img {
+  width: 60px;
+  height: 44px;
+}
+.number {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.number span{
+  margin-right: 1.2rem;
+}
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.date {
+  text-align: end;
+}
+.name {
+  width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.section-form {
+  max-width: 550px;;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: rgba(247, 0, 123, 0.35) 0px 5px 15px;
+  background-color: #FFFFFF;
+  padding: 2rem;
+  position: absolute;
+  margin-top: 8rem;
+  z-index: 1;
+}
+.form {
+  margin-top: 7rem;
+}
+.group-form {
+  border: none;
+}
+.form input {
+  padding: .7rem;
+  width: 100%;
+  border: 1px solid var(--colorSecondary);
+}
+.form div {
+  width: 100%;
+  margin-top: .5rem;
+}
+.grid-date {
+  display: flex;
+  flex-direction: column;
+}
+.grid-date input {
+  width: 100%;
+}
+.grid-date div select {
+  padding: .65rem;
+  width: 100%;
+  border: none;
+  border: 1px solid var(--colorSecondary);
+}
+.btnValidar {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border: none;
+  background-color: var(--colorPrimary);
+  color: var(--colorTextWhite);
+}
+
+
+/* ----------- Alertas -------------*/
+.alert-danger {
+  background-color: var(--colorBGDanger);
+  padding: 0.5rem;
+  color: var(--colorTextDanger);
+  border-radius: 10px;
+  border: 1px solid var(--colorBGDanger);
+  text-align: center;
+  widows: 100%;
+  margin-top: .5rem;
+}
+.hide {
+  display: none;
+}
+.alert {
+  margin-top: -35rem;
+  z-index: 100;
+}
+.alert-success {
+  color: var(--colorTextPrimary);
+  width: 320px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2rem;
+  text-align:center;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+.alert-success p {
+  color:black;
+}
+.alert-success ion-icon {
+  font-size: 3rem;
+}
+.blur {
+  filter: blur(10px);
+}
+@media (min-width: 768px) {
+  .main-info {
+    max-width: 550px;
+  }
+}
+@media (min-width:1024px) {
+  .card {
+    position: relative;
+    z-index: 10;
+  }
+  .section-form {
+    padding: 3rem;
+    margin-top: 8rem;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.5rem;
+  }
+  .grid-date {
+    flex-direction: row;
+  }
+  .grid-date input {
+    width: 150px;
+  }
+  .grid-date div select {
+    padding: .65rem;
+    width: 140px;
+  }
+  .alert {
+    margin-top: -5rem;
+  }
+}
+
