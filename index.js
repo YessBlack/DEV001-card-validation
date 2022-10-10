@@ -22,19 +22,16 @@ const showAlertSuccess = () => {
     $('.alert-success').classList.remove('hide');
   }, 2000);
 }
-
 //Recuperar datos del formulario
 $('#form').addEventListener('submit', (e) => {
   e.preventDefault()
-  const data = Object.fromEntries(new FormData(e.target));
+  const data = Object.fromEntries(new FormData(e.target))
 
-  if(data.number <= 0) {
-    showAlertDanger();
-  }else{
+  if(data.number <= 0) return showAlertDanger();
+
     (validator.isValid(data.number))
     ? showAlertSuccess()
     : showAlertDanger();
-  }
 
   $('#number').value = validator.maskify(data.number)
 })
